@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>G. I. S.</title>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <link rel="stylesheet" href="A PARAMETER.css">
+    <link rel="stylesheet" href="A FONT.css">
+    <link rel="stylesheet" href="A GIS.css">
+    <style>
+        .ButtonPlay{
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body onload="WebOnload()">
+    <button id="ButtonPlay" class="ButtonPlay" onclick="MainMenuOpen()">Play?</button>
+    <!------------------------------------------------ Main Menu -------------------------------------------------------->
+    <!-- Main Menu -->
+    <canvas width="1200" height="600" class="MainMenuCanvas" id="MainMenuCanvas"></Canvas>
+    <h1 class="TittleGame" id="TittleGame">Galaxy In Space</h1>
+    <!-- Display Player -->
+    <h2 class="Character" id="Character">T-01</h2>
+    <button class="DisplayPlayer" id="DisplayPlayer"></button>
+    <h3 class="Controller" id="Controller">Key Arrow</h3>
+    <!-- Button Menu -->
+    <button class="PlayButton" id="PlayButton"><span class="PlayBtn">Play</span></button>
+    <button class="CharactersButton" id="CharactersButton"><span class="CharactersBtn">Characters</span></button>
+    <button class="SettingsButton" id="SettingsButton"><span class="SettingsBtn">Settings</span></button>
+    <button class="AboutButton" id="AboutButton"><span class="AboutBtn">About</span></button>
+    <button class="MoreGamesButton" id="MoreGamesButton"><span class="MoreGamesBtn">More Games</span></button>
+    <button class="CheatButton" id="CheatButton"><span class="CheatBtn">Cheat</span></button>
+    <!---------------------------------------------- End Main Menu ------------------------------------------------------>
+    
+
+    <!------------------------------------------------ Play Menu -------------------------------------------------------->
+    <canvas class="PlayMenuCanvas" id="PlayMenuCanvas" width="1200" height="600"></canvas>
+    <h1 class="TittleLevelGame" id="TittleLevelGame">Level Game G. I. S.</h1>
+
+    <button class="ButtonLevelOne" id="ButtonLevelOne"></button>
+    <button class="EmptyThroophyOne" id="EmptyThroophyOne"></button>
+    
+    <button class="ButtonCompletedLevelOne" id="ButtonCompletedLevelOne"></button>
+    <button class="ThroophyOne" id="ThroophyOne"></button>
+
+    <button class="ButtonLockedLevelTwo" id="ButtonLockedLevelTwo"></button>
+    <button class="LockedLevelTwo" id="LockedLevelTwo"></button>
+    
+    <button class="ButtonLevelTwo" id="ButtonLevelTwo"></button>
+    <button class="EmptyThroophyTwo" id="EmptyThroophyTwo"></button>
+    
+    <button class="ButtonCompletedLevelTwo" id="ButtonCompletedLevelTwo"></button>
+    <button class="ThroophyTwo" id="ThroophyTwo"></button>
+    
+    <button class="ButtonLockedLevelThree" id="ButtonLockedLevelThree"></button>
+    <button class="LockedLevelThree" id="LockedLevelThree"></button>
+    
+    <button class="ButtonLevelThree" id="ButtonLevelThree"></button>
+    <button class="EmptyThroophyThree" id="EmptyThroophyThree"></button>
+
+    <button class="ButtonCompletedLevelThree" id="ButtonCompletedLevelThree"></button>
+    <button class="ThroophyThree" id="ThroophyThree"></button>
+    <!---------------------------------------------- End Play Menu ------------------------------------------------------>
+    
+
+    <!---------------------------------------------- Character Menu ----------------------------------------------------->
+    <!-- Display Character Menu -->
+    <canvas class="CharacterCanvas" id="CharacterCanvas"></canvas>
+    <h1 class="TittleChooseCharacter" id="TittleChooseCharacter">Choose Your Character</h1>
+    <!-- Display Button Character One -->
+    <button class="CharacterOneSelected" id="CharacterOneSelected"></button>
+    <button class="CharacterOneDisplay" id="CharacterOneDisplay"></button>
+    <button class="CharacterOneButton" id="CharacterOneButton">Selected</button>
+    <!-- Display Button Character Two -->
+    <button class="CharacterTwoSelected" id="CharacterTwoSelected"></button>
+    <button class="CharacterTwoDisplay" id="CharacterTwoDisplay"></button>
+    <button class="CharacterTwoButton" id="CharacterTwoButton">Select</button>
+    <!-------------------------------------------- End Character Menu --------------------------------------------------->
+
+    
+    <!---------------------------------------------- Settings Menu ------------------------------------------------------>
+    <canvas width="1200" height="600" class="SettingsCanvas" id="SettingsCanvas"></canvas>
+    <h1 class="TittleSettings" id="TittleSettings">Settings Menu</h1>
+    <h2 class="VolumeAudio" id="VolumeAudio">Volume Audio</h2>
+    <h3 class="MusicVolume" id="MusicVolume">Music Volume 
+        <span class="Music" id="Music">50%</span>
+    </h3>
+    <input type="range" min="0" max="100" step="1" value="50" class="ParameterMusic" id="ParameterMusic">
+    <h3 class="SoundVolume" id="SoundVolume">Sound Volume 
+        <span class="Sound" id="Sound">50%</span>
+    </h3>
+    <input type="range" min="0" max="100" step="1" value="50" class="ParameterSound" id="ParameterSound">
+    <button class="LineSettings" id="LineSettings"></button>
+    <h2 class="ControllerGame" id="ControllerGame">Controller Game</h2>
+    <h3 class="KeyArrow" id="KeyArrow">Key Arrow</h3>
+    <button class="KeyArrowSelect" id="KeyArrowSelect">Selected</button>
+    <button class="KeyArrowDisplay" id="KeyArrowDisplay"></button>
+    <h3 class="KeyWASD" id="KeyWASD">Key WASD</h3>
+    <button class="KeyWASDSelect" id="KeyWASDSelect">Select</button>
+    <button class="KeyWASDDisplay" id="KeyWASDDisplay"></button>
+
+    <!-------------------------------------------- End Settings Menu ---------------------------------------------------->
+
+    <!----------------------------------------------- About Menu -------------------------------------------------------->
+    <canvas width="1200" height="600" class="AboutCanvas" id="AboutCanvas"></canvas>
+    <h1 class="PageDislay" id="PageDisplay">Page 1/3</h1>
+    <button class="ButtonNextPage" id="ButtonNextPage" style="vertical-align:middle">
+        <span class="BtnNextPage" id="BtnNextPage">Next Page</span>
+    </button>
+    <button class="ButtonPrevPage" id="ButtonPrevPage" style="vertical-align:middle">
+        <span class="BtnPrevPage" id="BtnPrevPage">Prev Page</span>
+    </button>
+    <!-------------------------------------------- End About Menu ------------------------------------------------------->
+    
+    <!--------------------------------------------- More Games Menu ----------------------------------------------------->
+
+    <!------------------------------------------- End More Games Menu --------------------------------------------------->
+
+    <!----------------------------------------------- Cheat Menu -------------------------------------------------------->
+    <canvas id="CanvasCheatMenu" width="1200" height="600"></canvas>
+    <!-- <h1 id="OneFinish">Uncompleted</h1> -->
+    <h1 id="OneFinish">Level 1 Finish</h1>
+    <h1 id="TwoFinish">Uncompleted</h1>
+    <!-- <h1 id="TwoFinish">Level 2 Finish</h1> -->
+    <h1 id="ThreeFinish">Uncompleted</h1>
+    <!-- <h1 id="ThreeFinish">Level 3 Finish</h1> -->
+    <button id="OneBtn" onclick="CheatOne()">One</button>
+    <button id="TwoBtn" onclick="CheatTwo()">Two</button>
+    <button id="ThreeBtn" onclick="CheatThree()">Three</button>
+    <h1 id="LevelGame">Level 1</h1>
+    <button id="ResetGameAllToZero">Reset Game All To Zero</button>
+    <h1 id="ConditionGame">Play</h1>
+    <!--------------------------------------------- End Cheat Menu ------------------------------------------------------>
+
+    <!----------------------------------------------- Level Game -------------------------------------------------------->
+    <canvas class="CanvasLevelGame" id="CanvasLevelGame" width="1200" height="600"></canvas>
+
+    <h1 class="TittleProggresBarLevel" id="TittleProggresBarLevel">Level 1</h1>
+
+    <button class="PausedLevelButton" id="PausedLevelButton"></button>
+    <h1 class="TittlePausedGame" id="TittlePausedGame">Game Paused!</h1>
+    <dialog class="StyleDisplayPaused" id="DisplayPaused">
+        <button class="ButtonResumePaused" id="ButtonResumePaused">Resume</button>
+        <button class="ButtonRestartPaused" id="ButtonRestartPaused">Restart</button>
+        <button class="ButtonMainMenuPaused" id="ButtonMainMenuPaused">Main Menu</button>
+    </dialog>
+    <!--------------------------------------------- End Level Game ------------------------------------------------------>
+
+    <!----------------------------------------- Display Condition Game -------------------------------------------------->
+    <h1 class="TittleGameOver" id="TittleGameOver">Game Over!</h1>
+    <dialog class="StyleDisplayGameOver" id="DisplayGameOver">
+        <h1 class="DisplayProggresBarTittle" id="DisplayProggresBarTittle">Your Proggres is <span class="DisplayProggresBar" id="DisplayProggresBar">0%</span></h1>
+        <button class="ButtonRestartGameOver" id="ButtonRestartGameOver">Restart</button>
+        <button class="ButtonMainMenuGameOver" id="ButtonMainMenuGameOver">Main Menu</button>
+    </dialog>
+
+    <dialog class="StyleDisplayFinish" id="DisplayFinish">
+        <h1 class="DisplayLevelFinish" id="DisplayLevelFinish"></h1>
+        <h1 class="TittleLevelFinished" id="TittleLevelFinished">Level 1 Completed</h1>
+        <button class="ButtonPlayAgainFinish" id="ButtonPlayAgainFinish"><span class="BtnPlayAgainFinish">Play Again</span></button>
+        <button class="ButtonMainMenuFinish" id="ButtonMainMenuFinish"><span class="BtnMainMenuFinish">Main Menu</span></button>
+    </dialog>
+    <!--------------------------------------- End Display Condition Game ------------------------------------------------>
+    <button class="BackButton" id="BackButton" style="vertical-align:middle"><span class="BackBtn" id="BackBtn">Back</span></button>
+    <script src="A GIS.js"></script>
+</body>
+</html>

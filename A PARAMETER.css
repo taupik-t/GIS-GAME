@@ -1,0 +1,72 @@
+input[type=range]{
+    -webkit-appearance: none;
+    width: 300px;
+    border-radius: 10px;
+}
+.ParameterMusic{
+    position: absolute;
+    top: 275px;
+    left: 183px;
+}
+.ParameterSound{
+    position: absolute;
+    top: 450px;
+    left: 183px;
+}
+.ParameterMusic[type=range]::-webkit-slider-runnable-track{
+    background-image: url("Parameter.png");
+    height: 20px;
+}
+.ParameterMusic[type=range]:focus::-webkit-slider-runnable-track {
+    background-image: url("Parameter Hover.png");
+    height: 20px;
+}
+.ParameterMusic[type=range]:focus::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-image: url("Button Music Hover.png");
+    margin-top: -10px;
+}
+.ParameterMusic[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-image: url("Button Music.png");
+    margin-top: -10px;
+}
+.ParameterMusic[type=range]:focus {
+    outline: none;
+}
+.ParameterSound[type=range]:focus {
+    outline: none;
+}
+/* Button Volume */
+.ParameterSound[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-image: url("Button Sound.png");
+    margin-top: -10px;
+    
+}
+.ParameterSound[type=range]:focus::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-image: url("Button Sound Hover.png");
+    margin-top: -10px;
+}
+/* Parameter Volume */
+.ParameterSound[type=range]:focus::-webkit-slider-runnable-track {
+    background-image: url("Parameter Hover.png");
+    height: 20px;
+}
+.ParameterSound[type=range]::-webkit-slider-runnable-track{
+    background-image: url("Parameter.png");
+    height: 20px;
+}

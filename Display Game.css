@@ -1,0 +1,277 @@
+/* Display Pause Game */
+.WrapDetectLevelGame{
+    top: 1200px;
+    left: 1480px;
+}
+.DetectLevelGame{
+    color: silver;
+    font-size: 50px;
+    width: 600px;
+    animation: TittleLevelGame 3s infinite;
+}
+@keyframes TittleLevelGame {
+    0% {color: blue;}
+    50% {color: skyblue;}
+    100% {color: blue;}
+}
+.WrapTittleGamePause{
+    top: 710px;
+    left: 1809px;
+}
+.TittleGamePause{
+    color: silver;
+    font-size: 50px;
+    width: 600px;
+    animation: TittlePause 3s infinite;
+  }
+  
+@keyframes TittlePause {
+    0% {color: blue;}
+    50% {color: skyblue;}
+    100% {color: blue;}
+}
+.DisplayPause{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.PauseDisplay{
+    background-color: transparent;
+    border: 15px blue groove;
+    position: absolute;
+    top: 789px;
+    left: 1839px;
+    border-radius: 30px;
+    background-image: url("DisplayPause.png");
+    width: 430px;
+    height: 430px;
+}
+.WrapPauseButton{
+    top: 679px;
+    left: 2585px;
+}
+.TestRemove{
+    position: absolute;
+    top: 679px;
+    left: 2450px;
+}
+.PauseButton{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-image: url("ButtonPause.png");
+}
+.PauseButton:hover{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-image: url("ButtonPauseHover.png");
+}
+.ResumeButton{
+    border-radius: 15px;
+    border: none;
+    width: 200px;
+    height: 90px;
+    background-image: url("ButtonRE.png");
+}
+.RestartButton{
+    border-radius: 15px;
+    border: none;
+    width: 200px;
+    height: 90px;
+    background-image: url("ButtonR.png");
+}
+.MainMenuButton{
+    border-radius: 15px;
+    border: none;
+    width: 200px;
+    height: 90px;
+    background-image: url("ButtonM.png");
+}
+.ResumeButton:hover{
+    border: none;
+    width: 200px;
+    height: 90px;
+    background-image: url("ButtonREH.png");
+}
+.RestartButton:hover{
+    border: none;
+    width: 200px;
+    height: 90px;
+    background-image: url("ButtonRH.png");
+}
+.MainMenuButton:hover{
+    border: none;
+    width: 200px;
+    height: 90px;
+    background-image: url("ButtonMH.png");
+}
+.ResumeButton:active{
+    border: none;
+    width: 200px;
+    height: 80px;
+    background-image: url("ButtonREA.png");
+}
+.RestartButton:active{
+    border: none;
+    width: 200px;
+    height: 80px;
+    background-image: url("ButtonRA.png");
+}
+.MainMenuButton:active{
+    border: none;
+    width: 200px;
+    height: 80px;
+    background-image: url("ButtonMA.png");
+}
+
+/* Display Game Over */
+.WrapTittleGameOver{
+    top: 719px;
+    left: 1899px;
+}
+.TittleGameOver{
+    color: white;
+    font-size: 50px;
+    width: 400px;
+    animation: TittleOver 3s infinite;
+}
+
+@keyframes TittleOver {
+    0% {color: sandybrown;}
+    20% {color: brown;}
+    100% {color: sandybrown;}
+}
+.DisplayGameOver{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.PlayAgainOver{
+    border: 10px solid red;
+    color: transparent;
+    width: 170px;
+    height: 100px;
+    background-image: url("PlayAgainBtn.png");
+}
+.MainMenuOver{
+    border: 10px solid red;
+    color: transparent;
+    width: 170px;
+    height: 100px;
+    background-image: url("MainMenuBtnOver.png");
+}
+.PlayAgainOver:hover{
+    border: 10px inset red;
+    color: transparent;
+    width: 170px;
+    height: 100px;
+    background-image: url("PlayAgainBtnH.png");
+}
+.MainMenuOver:hover{
+    border: 10px inset red;
+    color: transparent;
+    width: 170px;
+    height: 100px;
+    background-image: url("MainMenuBtnOverH.png");
+}
+.PlayAgainOver:active{
+    border: 10px groove red;
+    color: transparent;
+    width: 170px;
+    height: 100px;
+    background-image: url("PlayAgainBtnA.png");
+}
+.MainMenuOver:active{
+    border: 10px groove red;
+    color: transparent;
+    width: 170px;
+    height: 100px;
+    background-image: url("MainMenuBtnOverA.png");
+}
+.GameOverDisplay{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 799px;
+    left: 1909px;
+    background-image: url("DisplayGameOver.png");
+    width: 300px;
+    height: 350px;
+    border: 2px solid sandybrown;
+}
+
+/* Display Finish */
+.WrapTittleCompletedLevel{
+    top: 769px;
+    left: 1849px;
+}
+.TittleCompletedLevel{
+    color: white;
+}  
+.DisplayFinishLevel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.FinishLevelDisplay{
+    width: 1200px;
+    height: 600px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 669px;
+    left: 1449px;
+    /* background-image: url("DisplayPause.png"); */
+}
+.PlayNextLevel{
+    margin-top: 9%;
+    border: hidden;
+    color: transparent;
+    background-color: transparent;
+    width: 250px;
+    height: 125px;
+    background-image: url("NextLevelButton.png");
+}
+.PlayNextLevel:hover{
+    border: hidden;
+    color: transparent;
+    background-color: transparent;
+    width: 250px;
+    height: 125px;
+    background-image: url("NextLevelButtonH.png");
+}
+.PlayNextLevel:active{
+    border: hidden;
+    color: transparent;
+    background-color: transparent;
+    width: 230px;
+    height: 125;
+    background-image: url("NextLevelButtonA.png");
+}
+.PlayAgainFinish{
+    border: hidden;
+    color: white;
+    background-color: blue;
+    width: 250px;
+    height: 125px;
+}
+.MainMenuFinish{
+    border: hidden;
+    color: white;
+    background-color: blue;
+    width: 250px;
+    height: 125px;
+}

@@ -1,0 +1,1505 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    overflow: hidden;
+    background-color: #04243b;
+}
+canvas{
+    position: absolute;
+}
+button{
+    cursor: pointer;
+}
+/*-------------------------------------------------- Main Menu -------------------------------------------------------*/
+/* Main Menu */
+.MainMenuCanvas{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("Background Main Menu.png");
+}
+.TittleGame{
+    top: 33px;
+    font-family: audiowide;
+    position: absolute;
+    font-size: 45px;
+    width: 400px;
+    text-align: center;
+    left: 683px;
+}
+/* Display Character */
+.Character{
+    width: 100px;
+    text-align: center;
+    top: 158px;
+    left: 843px;
+    background-color: transparent;
+    font-family: audiowide;
+    position: absolute;
+}
+.DisplayPlayer{
+    position: absolute;
+    background-color: transparent;
+    border-top: 10px solid rgb(76, 0, 78);
+    border-left: 10px solid purple;
+    border-right: 10px solid purple;
+    border-bottom: 10px solid rgb(255, 0, 255);
+    border-radius: 10px;
+    box-shadow: 0 20px 50px blueviolet;
+    width: 220px;
+    height: 220px;
+    top: 223px;
+    left: 783px;
+}
+.Controller{
+    width: 194px;
+    text-align: center;
+    top: 453px;
+    left: 800px;
+    font-family: audiowide;
+    position: absolute;
+}
+/* Button Menu */
+.PlayButton{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    font-family: audiowide;
+    background-color: #1b9eff;
+    position: absolute;
+    width: 230px;
+    height: 80px;
+    top: 63px;
+    left: 313px;
+    transition: 0.5s;
+}
+.PlayButton:hover{
+    width: 240px;
+    left: 308px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 50px #1b9eff;
+}
+.PlayButton:before{
+    content: "";
+    background-color: #04243b;
+    position: absolute;
+    inset: 2px;
+}
+.PlayBtn{
+    z-index: 1;
+    position: relative;
+}
+.CharactersButton{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    font-family: audiowide;
+    background-color: #1b9eff;
+    transition: 0.5s;
+    position: absolute;
+    width: 230px;
+    height: 80px;
+    top: 173px;
+    left: 313px;
+}
+.CharactersButton:hover{
+    width: 240px;
+    left: 308px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 50px #1b9eff;
+}
+.CharactersButton:before{
+    content: "";
+    background-color: #04243b;
+    position: absolute;
+    inset: 2px;
+}
+.CharactersBtn{
+    z-index: 1;
+    position: relative;
+}
+.SettingsButton{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    font-family: audiowide;
+    background-color: #1b9eff;
+    transition: 0.5s;
+    position: absolute;
+    width: 230px;
+    height: 80px;
+    top: 283px;
+    left: 313px;
+}
+.SettingsButton:hover{
+    width: 240px;
+    left: 308px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 50px #1b9eff;
+}
+.SettingsButton:before{
+    content: "";
+    background-color: #04243b;
+    position: absolute;
+    inset: 2px;
+}
+.SettingsBtn{
+    z-index: 1;
+    position: relative;
+}
+.AboutButton{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    font-family: audiowide;
+    background-color: #1b9eff;
+    transition: 0.5s;
+    position: absolute;
+    width: 230px;
+    height: 80px;
+    top: 393px;
+    left: 313px;
+}
+.AboutButton:hover{
+    width: 240px;
+    left: 308px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 50px #1b9eff;
+}
+.AboutButton:before{
+    content: "";
+    background-color: #04243b;
+    position: absolute;
+    inset: 2px;
+}
+.AboutBtn{
+    z-index: 1;
+    position: relative;
+}
+.MoreGamesButton{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    font-family: audiowide;
+    background-color: #1b9eff;
+    transition: 0.5s;
+    position: absolute;
+    width: 230px;
+    height: 80px;
+    top: 503px;
+    left: 313px;
+}
+.MoreGamesButton:hover{
+    width: 240px;
+    left: 308px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 50px #1b9eff;
+}
+.MoreGamesButton:before{
+    content: "";
+    background-color: #04243b;
+    position: absolute;
+    inset: 2px;
+}
+.MoreGamesBtn{
+    z-index: 1;
+    position: relative;
+}
+.CheatButton{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    font-family: audiowide;
+    background-color: #1b9eff;
+    transition: 0.5s;
+    position: absolute;
+    width: 230px;
+    height: 80px;
+    top: 530px;
+    left: 1038px;
+}
+.CheatButton:hover{
+    width: 240px;
+    left: 1033px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 50px #1b9eff;
+}
+.CheatButton:before{
+    content: "";
+    background-color: #04243b;
+    position: absolute;
+    inset: 2px;
+}
+.CheatBtn{
+    z-index: 1;
+    position: relative;
+}
+.BackButton {
+    font-family: audiowide;
+    position: absolute;
+    top: 43px;
+    left: 103px;
+    display: inline-block;
+    background-color: #04243b;
+    border: #1b9eff 2px solid;
+    color: #1b9eff;
+    text-align: center;
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.BackBtn {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.BackButton:hover{
+    box-shadow: 0 0 30px #1b9eff;
+}
+.BackBtn:after {
+    content: '\276E \276E';
+    color: #1b9eff;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -40px;
+}
+.BackButton:hover .BackBtn {
+    padding-left: 20px;
+}
+.BackButton:hover .BackBtn:after {
+    opacity: 1;
+    left: -10px;
+}
+/*---------------------------------------------- End Main Menu --------------------------------------------------------*/
+
+/*------------------------------------------------ Play Menu ----------------------------------------------------------*/
+.PlayMenuCanvas{
+    background-image: url("Background Play Game.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.TittleLevelGame{
+    position: absolute;
+    top: 33px;
+    width: 400px;
+    text-align: center;
+    left: 483px;
+    color: white;
+    font-family: audiowide;
+}
+/* Display LevelOne */
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+.ButtonLevelOne{
+    position: absolute;
+    border-top: 10px solid #04b0ee;
+    border-left: 10px solid #0471ee;
+    border-right: 10px solid #0471ee;
+    border-bottom: 10px solid rgb(0, 81, 255);
+    background-image: url("DisplayLevel.png");
+    width: 220px;
+    height: 330px;
+    top: 196px;
+    left: 233px;
+    cursor: pointer;
+}
+.ButtonLevelOne:hover{
+    border-top: 10px solid #0471ee;
+    border-left: 10px solid rgb(0, 81, 255);
+    border-right: 10px solid rgb(0, 81, 255);
+    border-bottom: 10px solid blue;
+    background-image: url("DisplayLevel.png");
+    width: 220px;
+    height: 330px;
+    top: 196px;
+    left: 233px;
+    cursor: pointer;
+}
+.ButtonCompletedLevelOne{
+    position: absolute;
+    top: 196px;
+    left: 233px;
+    cursor: default;
+    width: 220px;
+    height: 330px;
+    margin: auto;
+    box-shadow:0 0 50px blue;
+    overflow: hidden;
+    border: none;
+    background-color: #1c1b29;
+    cursor: pointer;
+}
+.ButtonCompletedLevelOne:before{
+    position: absolute;
+    content: "";
+    background-image: conic-gradient(
+        #04b0ee 50deg,
+        transparent 120deg
+    );
+    height: 200%;
+    width: 300%;
+    left: -100%;
+    top: -50%;
+    animation: rotate 2s linear infinite;
+}
+.ButtonCompletedLevelOne:after{
+    position: absolute;
+    content: "";
+    height: 310px;
+    width: 200px;
+    background-image: url("DisplayCompletedLevel.png");
+    top: 10px;
+    left: 10px;
+    color: #04b0ee;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.ButtonLockedLevelTwo{
+    position: absolute;
+    top: 196px;
+    left: 583px;
+    width: 220px;
+    height: 330px;
+    border-top: 10px solid silver;
+    border-left: 10px outset grey;
+    border-right: 10px inset grey;
+    border-bottom: 10px outset gray;
+    background-image: url("DisplayLockedLevel.png");
+    cursor: not-allowed;
+}
+.ButtonLockedLevelTwo:hover{
+    position: absolute;
+    top: 196px;
+    left: 583px;
+    width: 220px;
+    height: 330px;
+    border-top: 10px solid rgb(80, 80, 80);
+    border-left: 10px inset grey;
+    border-right: 10px outset grey;
+    border-bottom: 10px solid rgb(15, 15, 15);
+    background-image: url("DisplayLockedLevel.png");
+    cursor: not-allowed;
+}
+.ButtonLevelTwo{
+    position: absolute;
+    border-top: 10px solid #04b0ee;
+    border-left: 10px solid #0471ee;
+    border-right: 10px solid #0471ee;
+    border-bottom: 10px solid rgb(0, 81, 255);
+    background-image: url("DisplayLevel.png");
+    width: 220px;
+    height: 330px;
+    top: 196px;
+    left: 583px;
+    cursor: pointer;
+}
+.ButtonLevelTwo:hover{
+    position: absolute;
+    border-top: 10px solid #0471ee;
+    border-left: 10px solid rgb(0, 81, 255);
+    border-right: 10px solid rgb(0, 81, 255);
+    border-bottom: 10px solid blue;
+    background-image: url("DisplayLevel.png");
+    width: 220px;
+    height: 330px;
+    top: 196px;
+    left: 583px;
+    cursor: pointer;
+}
+.ButtonCompletedLevelTwo{
+    position: absolute;
+    top: 196px;
+    left: 583px;
+    cursor: pointer;
+    width: 220px;
+    height: 330px;
+    margin: auto;
+    box-shadow:0 0 50px blue;
+    overflow: hidden;
+    border: none;
+    background-color: #1c1b29;
+}
+.ButtonCompletedLevelTwo:before{
+    position: absolute;
+    content: "";
+    background-image: conic-gradient(
+        #04b0ee 50deg,
+        transparent 120deg
+    );
+    height: 200%;
+    width: 300%;
+    left: -100%;
+    top: -50%;
+    animation: rotate 2s linear infinite;
+}
+.ButtonCompletedLevelTwo:after{
+    position: absolute;
+    content: "";
+    height: 310px;
+    width: 200px;
+    background-image: url("DisplayCompletedLevel.png");
+    top: 10px;
+    left: 10px;
+    color: #04b0ee;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+.ButtonLockedLevelThree{
+    position: absolute;
+    top: 196px;
+    left: 933px;
+    width: 220px;
+    height: 330px;
+    border-top: 10px solid silver;
+    border-left: 10px outset grey;
+    border-right: 10px inset grey;
+    border-bottom: 10px outset gray;
+    background-image: url("DisplayLockedLevel.png");
+    cursor: not-allowed;
+}
+.ButtonLockedLevelThree:hover{
+    position: absolute;
+    top: 196px;
+    left: 933px;
+    width: 220px;
+    height: 330px;
+    border-top: 10px solid rgb(80, 80, 80);
+    border-left: 10px inset grey;
+    border-right: 10px outset grey;
+    border-bottom: 10px solid rgb(15, 15, 15);
+    background-image: url("DisplayLockedLevel.png");
+    cursor: not-allowed;
+}
+.ButtonLevelThree{
+    position: absolute;
+    border-top: 10px solid #04b0ee;
+    border-left: 10px solid #0471ee;
+    border-right: 10px solid #0471ee;
+    border-bottom: 10px solid rgb(0, 81, 255);
+    background-image: url("DisplayLevel.png");
+    width: 220px;
+    height: 330px;
+    top: 196px;
+    left: 933px;
+    cursor: pointer;
+}
+.ButtonLevelThree:hover{
+    position: absolute;
+    border-top: 10px solid #0471ee;
+    border-left: 10px solid rgb(0, 81, 255);
+    border-right: 10px solid rgb(0, 81, 255);
+    border-bottom: 10px solid blue;
+    background-image: url("DisplayLevel.png");
+    width: 220px;
+    height: 330px;
+    top: 196px;
+    left: 933px;
+    cursor: pointer;
+}
+.ButtonCompletedLevelThree{
+    position: absolute;
+    top: 196px;
+    left: 933px;
+    cursor: pointer;
+    width: 220px;
+    height: 330px;
+    margin: auto;
+    box-shadow:0 0 50px blue;
+    overflow: hidden;
+    border: none;
+    background-color: #1c1b29;
+}
+.ButtonCompletedLevelThree:before{
+    position: absolute;
+    content: "";
+    background-image: conic-gradient(
+        #04b0ee 50deg,
+        transparent 120deg
+    );
+    height: 200%;
+    width: 300%;
+    left: -100%;
+    top: -50%;
+    animation: rotate 2s linear infinite;
+}
+.ButtonCompletedLevelThree:after{
+    position: absolute;
+    content: "";
+    height: 310px;
+    width: 200px;
+    background-image: url("DisplayCompletedLevel.png");
+    top: 10px;
+    left: 10px;
+    color: #04b0ee;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+.EmptyThroophyOne{
+    background-image: url("LevelOne.png");
+    left: 243px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    cursor: default;
+    top: 100px;
+    width: 200px;
+    height: 170px;
+}
+.ThroophyOne{
+    background-image: url("LevelOneCompleted.png");
+    left: 243px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    cursor: default;
+    top: 100px;
+    width: 200px;
+    height: 170px;
+}
+.EmptyThroophyTwo{
+    background-image: url("LevelTwo.png");
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    cursor: default;
+    top: 100px;
+    left: 593px;
+    width: 200px;
+    height: 170px;
+}
+.ThroophyTwo{
+    background-image: url("LevelTwoCompleted.png");
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    cursor: default;
+    top: 100px;
+    left: 593px;
+    width: 200px;
+    height: 170px;
+}
+.LockedLevelTwo{
+    position: absolute;
+    cursor: default;
+    top: 100px;
+    left: 593px;
+    width: 200px;
+    height: 170px;
+    background-color: transparent;
+    border: none;
+    background-image: url("Locked.png");
+}
+.EmptyThroophyThree{
+    position: absolute;
+    cursor: default;
+    top: 100px;
+    left: 943px;
+    width: 200px;
+    height: 170px;
+    background-color: transparent;
+    border: none;
+    background-image: url("LevelThree.png");
+}
+.ThroophyThree{
+    position: absolute;
+    cursor: default;
+    top: 100px;
+    left: 943px;
+    width: 200px;
+    height: 170px;
+    background-color: transparent;
+    border: none;
+    background-image: url("LevelThreeCompleted.png");
+}
+.LockedLevelThree{
+    position: absolute;
+    cursor: default;
+    top: 100px;
+    left: 943px;
+    width: 200px;
+    height: 170px;
+    background-color: transparent;
+    border: none;
+    background-image: url("Locked.png");
+}
+/*---------------------------------------------- End Play Menu --------------------------------------------------------*/
+
+/*---------------------------------------------- Character Menu -------------------------------------------------------*/
+/* Canvas Choose Character */
+.CharacterCanvas{
+    background-image: url("Background Choose Character.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.TittleChooseCharacter{
+    position: absolute;
+    top: 53px;
+    width: 1200px;
+    text-align: center;
+    left: 83px;
+    font-family: audiowide;
+}
+/* Displa Character UnSelected */
+.CharacterOneDisplay{
+    position: absolute;
+    top: 143px;
+    left: 293px;
+    background-image: url("CharacterOne.png");
+    width: 320px;
+    height: 420px;
+    border: 10px grey inset;
+}
+.CharacterTwoDisplay{
+    position: absolute;
+    top: 143px;
+    left: 753px;
+    background-image: url("CharacterTwo.png");
+    width: 320px;
+    height: 420px;
+    border: 10px grey inset;
+}
+/* Display Character When Its Selected */
+.CharacterOneSelected{
+    height: 420px;
+    width: 320px;
+    position: absolute;
+    top: 143px;
+    left: 293px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #1c1b29;
+    border: none;
+}
+.CharacterOneSelected:before{
+    content: "";
+    background-image: conic-gradient(
+        #04b0ee, skyblue 30deg,
+        transparent 120deg
+    );
+    height: 180%;
+    width: 250%;
+    position: absolute;
+    left: -60%;
+    top: -40%;
+    animation: rotate 2s linear infinite;
+}
+.CharacterOneSelected:after{
+    content: "";
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    background-color: #1c1b29; 
+    background-image: url("CharacterOne.png");
+    border-radius: 5px;
+    top: 10px;
+    left: 10px;
+    color: #04b0ee;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+.CharacterTwoSelected{
+    border: none;
+    height: 420px;
+    width: 320px;
+    position: absolute;
+    top: 143px;
+    left: 753px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #1c1b29;
+}
+.CharacterTwoSelected:before{
+    content: "";
+    background-image: conic-gradient(
+        #1b9eff, skyblue 30deg,
+        transparent 120deg
+    );
+    height: 180%;
+    width: 250%;
+    position: absolute;
+    left: -60%;
+    top: -40%;
+    animation: rotate 2s linear infinite;
+}
+.CharacterTwoSelected:after{
+    content: "";
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    background-color: #1c1b29; 
+    background-image: url("CharacterTwo.png");
+    border-radius: 5px;
+    top: 10px;
+    left: 10px;
+    color: #04b0ee;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+/* Button Select Choose Character */
+.CharacterOneButton{
+    position: absolute;
+    top: 483px;
+    left: 303px;
+    font-family: monospace;
+    font-weight: bold;
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: 70px;
+    background-color: skyblue;
+    border: 2px solid blue;
+}
+.CharacterOneButton:hover{
+    box-shadow: 0 0 30px blue;
+    border: 2px solid white;
+}
+.CharacterTwoButton{
+    position: absolute;
+    top: 483px;
+    left: 763px;
+    font-family: monospace;
+    font-weight: bold;
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: 70px;
+    background-color: skyblue;
+    border: 2px solid blue;
+}
+.CharacterTwoButton:hover{
+    box-shadow: 0 0 30px blue;
+    border: 2px solid white;
+}
+
+/*-------------------------------------------- End Character Menu -----------------------------------------------------*/
+
+/*---------------------------------------------- Settings Menu --------------------------------------------------------*/
+.SettingsCanvas{
+    background-image: url("Background Settings.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.TittleSettings{
+    font-family: audiowide;
+    border-bottom: 5px solid white;
+    border-radius: 20px;
+    position: absolute;
+    top: 43px;
+    width: 300px;
+    text-align: center;
+    left: 533px;
+}
+.VolumeAudio{
+    font-family: audiowide;
+    position: absolute;
+    color: cyan;
+    top: 123px;
+    left: 83px;
+    width: 600px;
+    text-align: center;
+}
+.MusicVolume{
+    font-family: audiowide;
+    position: absolute;
+    left: 183px;
+    top: 225px;
+}
+.SoundVolume{
+    font-family: audiowide;
+    position: absolute;
+    left: 183px;
+    top: 400px;
+}
+.ControllerGame{
+    font-family: audiowide;
+    position: absolute;
+    color: cyan;
+    top: 123px;
+    left: 683px;
+    width: 600px;
+    text-align: center;
+}
+.KeyArrow{
+    font-family: audiowide;
+    position: absolute;
+    top: 223px;
+    left: 875px;
+}
+.KeyArrowSelect{
+    font-family: audiowide;
+    position: absolute;
+    left: 870px;
+    top: 280px;
+    color: white;
+    background-color: blue;
+    border-top: 1px skyblue groove;
+    border-left: 1px blue groove;
+    border-right: 1px blue groove;
+    border-bottom: 1px darkblue groove;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+}
+.KeyArrowSelect:hover{
+    box-shadow: 0 0 20px skyblue;
+}
+.KeyArrowDisplay{
+    border: 10px solid blue;
+    position: absolute;
+    top: 200px;
+    left: 1000px;
+    width: 220px;
+    height: 170px;
+    background-image: url("KeyArrow.png");
+}
+.KeyArrowDisplay:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px skyblue;
+}
+.KeyWASD{
+    font-family: audiowide;
+    position: absolute;
+    top: 423px;
+    left: 875px;
+}
+.KeyWASDSelect{
+    font-family: audiowide;
+    position: absolute;
+    left: 870px;
+    top: 480px;
+    color: white;
+    background-color: black;
+    border-top: 1px skyblue groove;
+    border-left: 1px blue groove;
+    border-right: 1px blue groove;
+    border-bottom: 1px darkblue groove;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+}
+.KeyWASDSelect:hover{
+    box-shadow: 0 0 20px skyblue;
+}
+.KeyWASDDisplay{
+    border: 10px groove silver;
+    position: absolute;
+    top: 400px;
+    left: 1000px;
+    width: 220px;
+    height: 170px;
+    background-image: url("KeyWASD.png");
+}
+.KeyWASDDisplay:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px skyblue;
+}
+.LineSettings{
+    position: absolute;
+    border-radius: 20px;
+    border: 3px solid white;
+    background-color: blue;
+    left: 678px;
+    top: 143px;
+    width: 10px;
+    height: 450px;
+    cursor: default;
+    box-shadow: 0 0 20px skyblue;
+}
+/*-------------------------------------------- End Settings Menu ------------------------------------------------------*/
+
+/*----------------------------------------------- About Menu ----------------------------------------------------------*/
+.AboutCanvas{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("Background About Page 1.png");
+}
+.PageDislay{
+    position: absolute;
+    font-family: audiowide;
+    width: 1200px;
+    left: 83px;
+    top: 573px;
+    text-align: center;
+}
+.ButtonNextPage {
+    font-family: audiowide;
+    position: absolute;
+    top: 579px;
+    left: 1163px;
+    display: inline-block;
+    background-color: #04243b;
+    border: #1b9eff 2px solid;
+    color: #1b9eff;
+    text-align: center;
+    font-size: 20px;
+    height: 70px;
+    width: 200px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.BtnNextPage {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.ButtonNextPage:hover{
+    box-shadow: 0 0 30px #1b9eff;
+}
+.BtnNextPage:after {
+    content: '\276F \276F';
+    color: #1b9eff;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -40px;
+}
+.ButtonNextPage:hover .BtnNextPage {
+    padding-right: 20px;
+}
+.ButtonNextPage:hover .BtnNextPage:after {
+    opacity: 1;
+    right: -10px;
+}
+
+.ButtonPrevPage {
+    font-family: audiowide;
+    position: absolute;
+    top: 579px;
+    left: 0px;
+    display: inline-block;
+    background-color: #04243b;
+    border: #1b9eff 2px solid;
+    color: #1b9eff;
+    text-align: center;
+    font-size: 20px;
+    height: 70px;
+    width: 200px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.BtnPrevPage {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.ButtonPrevPage:hover{
+    box-shadow: 0 0 30px #1b9eff;
+}
+.BtnPrevPage:after {
+    content: '\276E \276E';
+    color: #1b9eff;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -40px;
+}
+.ButtonPrevPage:hover .BtnPrevPage {
+    padding-left: 20px;
+}
+.ButtonPrevPage:hover .BtnPrevPage:after {
+    opacity: 1;
+    left: -10px;
+}
+/*-------------------------------------------- End About Menu ---------------------------------------------------------*/
+
+/*--------------------------------------------- More Games Menu -------------------------------------------------------*/
+
+/*------------------------------------------- End More Games Menu -----------------------------------------------------*/
+
+/*----------------------------------------------- Cheat Menu ----------------------------------------------------------*/
+#CanvasCheatMenu{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#OneFinish{
+    font-family: audiowide;
+    top: 100px;
+    left: 83px;
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+#TwoFinish{
+    font-family: audiowide;
+    top: 100px;
+    left: 483px;
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+#ThreeFinish{
+    font-family: audiowide;
+    top: 100px;
+    left: 883px;
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+#OneBtn{
+    position: absolute;
+    width: 400px;
+    top: 300px;
+    left: 83px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+#TwoBtn{
+    position: absolute;
+    width: 400px;
+    top: 300px;
+    left: 483px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+#ThreeBtn{
+    position: absolute;
+    width: 400px;
+    top: 300px;
+    left: 883px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+#LevelGame{
+    font-family: audiowide;
+    top: 500px;
+    left: 83px;
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+#ResetGameAllToZero{
+    top: 500px;
+    left: 483px;
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+#ConditionGame{
+    font-family: audiowide;
+    top: 500px;
+    left: 883px;
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+/*--------------------------------------------- End Cheat Menu --------------------------------------------------------*/
+
+/*----------------------------------------------- Level Game ----------------------------------------------------------*/
+.CanvasLevelGame{
+    background-image: url("Background Level.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.PausedLevelButton{
+    position: absolute;
+    border: 1px solid blue;
+    background-image: url("ButtonPause.png");
+    top: 43px;
+    left: 1253px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50px;
+}
+.PausedLevelButton:hover{
+    border: 1px solid blueviolet;
+    background-image: url("ButtonPauseHover.png");
+    width: 52px;
+    height: 52px;
+    border-radius: 50px;
+}
+.PausedLevelButton:active{
+    border: 1px solid white;
+    background-image: url("ButtonPause.png");
+    width: 52px;
+    height: 52px;
+    border-radius: 50px;
+}
+.StyleDisplayPaused{
+    background-color: transparent;
+    border: 15px blue groove;
+    border-radius: 30px;
+    background-image: url("DisplayPause.png");
+    width: 430px;
+    height: 430px;
+    position: absolute;
+    top: 153px;
+    left: 468px;
+}
+.DisplayPaused{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.TittlePausedGame{
+    font-family: audiowide;
+    position: absolute;
+    top: 83px;
+    left: 483px;
+    width: 400px;
+    text-align: center;
+    animation: TittlePause 4s infinite;
+    font-size: 25px;
+}
+@keyframes TittlePause{
+    0% {color: blue; top: 83px; font-size: 33px;}
+    50% {color: skyblue; top: 93px; font-size: 40px;}
+    100% {color: blue; top: 83px; font-size: 33px;}
+}
+.ButtonResumePaused{
+    font-family: audiowide;
+    width: 200px;
+    height: 75px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #2d5eff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(0, 183, 255);
+}
+.ButtonResumePaused:hover {
+    background-color: #2e00fd;
+    border: 1px solid white;
+}
+.ButtonResumePaused:active {
+    border: none;
+    background-color: #17007e;
+    box-shadow: 0 5px rgb(0, 203, 255);
+    transform: translateY(4px);
+}
+.ButtonRestartPaused{
+    font-family: audiowide;
+    width: 200px;
+    height: 75px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #2d5eff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(0, 183, 255);
+}
+.ButtonRestartPaused:hover {
+    background-color: #2e00fd;
+    border: 1px solid white;
+}
+.ButtonRestartPaused:active {
+    background-color: #17007e;
+    box-shadow: 0 5px rgb(0, 203, 255);
+    transform: translateY(4px);
+    border: none;
+}
+.ButtonMainMenuPaused{
+    font-family: audiowide;
+    width: 200px;
+    height: 75px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #2d5eff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(0, 183, 255);
+}
+.ButtonMainMenuPaused:hover {
+    background-color: #2e00fd;
+    border: 1px solid white;
+}
+.ButtonMainMenuPaused:active {
+    border: none;
+    background-color: #17007e;
+    box-shadow: 0 5px rgb(0, 203, 255);
+    transform: translateY(4px);
+}
+/*--------------------------------------------- End Level Game --------------------------------------------------------*/
+
+/*----------------------------------------- Display Condition Game ----------------------------------------------------*/
+.TittleProggresBarLevel{
+    position: absolute;
+    left: 483px;
+    width: 400px;
+    top: 18px;
+    text-align: center;
+    font-family: audiowide;
+}
+.StyleDisplayGameOver{
+    background-color: brown;
+    border: 15px red solid;
+    width: 430px;
+    height: 430px;
+    position: absolute;
+    top: 153px;
+    left: 468px;
+}
+.DisplayGameOver{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.DisplayProggresBarTittle{
+    color: white;
+    font-family: monospace;
+}
+.ButtonRestartGameOver{
+    font-family: audiowide;
+    width: 200px;
+    height: 75px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ff006a;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(255, 0, 221);
+}
+.ButtonRestartGameOver:hover {
+    background-color: red;
+}
+.ButtonRestartGameOver:active {
+    background-color: darkred;
+    box-shadow: 0 5px rgb(255, 0, 221);
+    transform: translateY(4px);
+}
+.ButtonMainMenuGameOver{
+    font-family: audiowide;
+    width: 200px;
+    height: 75px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ff006a;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(255, 0, 221);
+}
+.ButtonMainMenuGameOver:hover {
+    background-color: red;
+}
+.ButtonMainMenuGameOver:active {
+    background-color: darkred;
+    box-shadow: 0 5px rgb(255, 0, 221);
+    transform: translateY(4px);
+}
+.TittleGameOver{
+    font-family: audiowide;
+    position: absolute;
+    top: 83px;
+    left: 483px;
+    width: 400px;
+    text-align: center;
+    animation: TiitleOverGame 4s infinite;
+    font-size: 25px;
+}
+@keyframes TiitleOverGame{
+    0% {color: red; top: 83px; font-size: 33px;}
+    50% {color: pink; top: 93px; font-size: 40px;}
+    100% {color: red; top: 83px; font-size: 33px;}
+}
+.StyleDisplayFinish{
+    background-color: rgb(88, 119, 255);
+    border: 15px rgb(0, 38, 255) groove;
+    border-radius: 10px;
+    width: 630px;
+    height: 530px;
+    position: absolute;
+    top: 58px;
+    left: 368px;
+    animation: FinishaBorder 4s infinite;
+}
+@keyframes FinishaBorder{
+    0% {border: 15px rgb(80, 159, 255) groove;}
+    50% {border: 15px rgb(30, 109, 255) groove;}
+    100% {border: 15px rgb(80, 159, 255) groove;}
+}
+.DisplayFinish{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.DisplayLevelFinish{
+    bottom: 325px;
+    position: absolute;
+    background-image: url("LevelOneCompleted.png");
+    width: 200px;
+    height: 170px;
+    border: none;
+    background-color: transparent;
+}
+.TittleLevelFinished{
+    position: absolute;
+    bottom: 300px;
+    font-weight: bold;
+    font-family: audiowide;
+    font-size: 35px;
+    color: white;
+    -webkit-text-stroke-color: rgb(60, 112, 255);
+    -webkit-text-stroke-width: 1px;
+    letter-spacing: 1px;
+    animation: TittleFinished 4s infinite;
+    cursor: default;
+}
+@keyframes TittleFinished{
+    0% {
+        -webkit-text-stroke-color: rgb(60, 112, 255);
+        -webkit-text-stroke-width: 1px;
+        letter-spacing: 1px;
+        font-size: 35px;
+    }
+    50% {
+        bottom: 280px;
+        -webkit-text-stroke-color: rgb(0, 38, 255);
+        -webkit-text-stroke-width: 1px;
+        letter-spacing: 2px;
+        font-size: 36px;
+    }
+    100% {-webkit-text-stroke-color: rgb(60, 112, 255);
+        -webkit-text-stroke-width: 1px;}
+}
+.ButtonPlayAgainFinish{
+    top: 250px;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    font-family: audiowide;
+    background-color: #1b9eff;
+    position: absolute;
+    width: 230px;
+    height: 80px;
+    transition: 0.5s;
+}
+.ButtonPlayAgainFinish:hover{
+    width: 240px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 50px white;
+}
+.ButtonPlayAgainFinish:before{
+    content: "";
+    background-color: #4100f3;
+    position: absolute;
+    inset: 2px;
+}
+.BtnPlayAgainFinish{
+    z-index: 1;
+    position: relative;
+}
+.ButtonMainMenuFinish{
+    top: 350px;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    font-family: audiowide;
+    background-color: #1b9eff;
+    position: absolute;
+    width: 230px;
+    height: 80px;
+    transition: 0.5s;
+}
+.ButtonMainMenuFinish:hover{
+    width: 240px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 50px white;
+}
+.ButtonMainMenuFinish:before{
+    content: "";
+    background-color: #4100f3;
+    position: absolute;
+    inset: 2px;
+}
+.BtnMainMenuFinish{
+    z-index: 1;
+    position: relative;
+}
+/*--------------------------------------- End Display Condition Game --------------------------------------------------*/
