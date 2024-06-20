@@ -209,6 +209,7 @@ button{
     position: relative;
 }
 .CheatButton{
+    display: none;
     font-weight: bold;
     color: white;
     font-size: 30px;

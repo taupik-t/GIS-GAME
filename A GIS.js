@@ -13,7 +13,6 @@ if (window.sidebar) {
 //<--------------------------------------------------- Main Menu ------------------------------------------------------->
 // <!-- Main Menu -->
 function WebOnload() {
-    BackSoundMusic = new video("Backsound Music.mp4")
     NextClick()
 }
 function NextClick() {
@@ -37,7 +36,6 @@ function NextClick() {
     TittleGameOver.style.visibility = "hidden"
 }
 function MainMenuOpen() {
-    BackSoundMusic.LoopVideo()
     ComponentMainMenu()
     MenuLooping()
 
@@ -660,8 +658,6 @@ ButtonLevelOne.onclick = function () {
     TittleProggresBarLevel.innerHTML = "Level 1"
     ObjectLevel()
     StartLevel()
-    BackSoundMusic.StopVideo()
-    BackSoundLevelOne.PlayVideo()
 }
 ButtonCompletedLevelOne.onclick = function () {
     PlayMenuClose()
@@ -671,8 +667,6 @@ ButtonCompletedLevelOne.onclick = function () {
     TittleProggresBarLevel.innerHTML = "Level 1"
     ObjectLevel()
     StartLevel()
-    BackSoundMusic.StopVideo()
-    BackSoundLevelOne.PlayVideo()
 }
 ButtonLevelTwo.onclick = function () {
     PlayMenuClose()
@@ -682,8 +676,6 @@ ButtonLevelTwo.onclick = function () {
     TittleProggresBarLevel.innerHTML = "Level 2"
     ObjectLevel()
     StartLevel()
-    BackSoundMusic.StopVideo()
-    BackSoundLevelTwo.PlayVideo()
 }
 ButtonCompletedLevelTwo.onclick = function () {
     PlayMenuClose()
@@ -693,8 +685,6 @@ ButtonCompletedLevelTwo.onclick = function () {
     TittleProggresBarLevel.innerHTML = "Level 2"
     ObjectLevel()
     StartLevel()
-    BackSoundMusic.StopVideo()
-    BackSoundLevelTwo.PlayVideo()
 }
 ButtonLevelThree.onclick = function () {
     PlayMenuClose()
@@ -704,8 +694,6 @@ ButtonLevelThree.onclick = function () {
     TittleProggresBarLevel.innerHTML = "Level 3"
     ObjectLevel()
     StartLevel()
-    BackSoundMusic.StopVideo()
-    BackSoundLevelThree.PlayVideo()
 }
 ButtonCompletedLevelThree.onclick = function () {
     PlayMenuClose()
@@ -715,8 +703,6 @@ ButtonCompletedLevelThree.onclick = function () {
     TittleProggresBarLevel.innerHTML = "Level 3"
     ObjectLevel()
     StartLevel()
-    BackSoundMusic.StopVideo()
-    BackSoundLevelThree.PlayVideo()
 }
 //<----------------------------------------------- End Play Menu ------------------------------------------------------->
 
@@ -1213,6 +1199,7 @@ let TwoBtnv = document.getElementById("TwoBtn")
 let ThreeBtnv = document.getElementById("ThreeBtn")
 let LevelGame = document.getElementById("LevelGame")
 let ConditionGame = document.getElementById("ConditionGame")
+let ProgressBarGame = document.getElementById("DisplayProggresBar")
 let ResetGameAllToZero = document.getElementById("ResetGameAllToZero")
 ResetGameAllToZero.onclick = function () {
     OneFinish.innerHTML = "Uncompleted"
@@ -1353,7 +1340,6 @@ function ComponentLevelOne() {
     Moon = new Object(0, 0, 150, 150, "Moon.png", "image")
     // FinishedLevel = new Object(500, 25, 450, 550, "Finish.png", "image")
     FinishedLevel = new Object(5000, 25, 450, 550, "Finish.png", "image")
-    BackSoundLevelOne = new video("BacksoundLevelOne.mp4")
     LightSaber1 = new Object(900, 260, 120, 340, "LightSaberV.png", "image")
     LightSaber2 = new Object(1200, 0, 120, 340, "LightSaberVM.png", "image")
     LightSaber3 = new Object(1500, 260, 120, 340, "LightSaberV.png", "image")
@@ -1399,7 +1385,6 @@ function ComponentLevelTwo() {
     Moon = new Object(525, 0, 150, 150, "Moon.png", "image")
     // FinishedLevel = new Object(1500, 25, 450, 550, "Finish.png", "image")
     FinishedLevel = new Object(10100, 25, 450, 550, "Finish.png", "image")
-    BackSoundLevelTwo = new video("BacksoundLevelTwo.mp4")
     LightSaber1 = new Object(500, 0, 1200, 120, "LightSaberHS.png", "image")
     LightSaber2 = new Object(500, 240, 1200, 120, "LightSaberHS.png", "image")
     LightSaber3 = new Object(500, 480, 1200, 120, "LightSaberHS.png", "image")
@@ -1433,13 +1418,13 @@ function ComponentLevelTwo() {
 
     LightSaber12 = new Object(5100, 0, 120, 470, "LightSaberGap8.png", "image")
 
-    // Komet1 = new Object(1250, 480, 400, 120, "Komet.png", "image")
+    Komet1 = new Object(1250, 480, 400, 120, "Komet.png", "image")
 
     Stick1 = new Object(5500, 0, 120, 80, "StickTop.png", "image")
     LightSaber13 = new Object(5500, 0, 120, -1, "LightSaberHeight.png", "image")
     Stick2 = new Object(5800, 520, 120, 80, "StickBottom.png", "image")
     LightSaber14 = new Object(5797, 0, 120, -1, "LightSaberHeight.png", "image")
-    // Komet2 = new Object(1250, 240, 400, 120, "Komet.png", "image")
+    Komet2 = new Object(1250, 240, 400, 120, "Komet.png", "image")
 
     Meteor12 = new Object(7200, 0, 150, 150, "Meteor.png", "image")
     Meteor13 = new Object(7200, 150, 150, 150, "Meteor.png", "image")
@@ -1480,7 +1465,6 @@ function ObjectLevel() {
     SpeedLevel = 1
     LimitObject = 1
     BackgroundLevel = new Object(0, 0, 1200, 600, "Background Level.png", "background")
-    SoundHitLightSaber = new video("SoundHitLIghtSaber.mp4")
     if (Character.innerHTML == "T-01") {
         Player = new Object(100, 250, 150, 75, "T-01 Jet.png", "image")
     }
@@ -1701,6 +1685,36 @@ function Object(x, y, width, height, color, type) {
             ConditionGame.innerHTML = "Finish"
         }
     }
+    this.ProgressBarLevelOne = function (objectfinish) {
+        var myplayerleft = this.x
+        var myplayerright = this.x + this.width
+        var finishleft = objectfinish.x
+        var finishright = objectfinish.x + objectfinish.width
+        const maxX = 5000;
+        var percentage = 0
+        if (myplayerright >= finishleft && myplayerleft <= finishright) {
+            percentage = 100
+        } else {
+            percentage = 100 - ((finishleft - myplayerright) / (maxX - myplayerright)) * 100
+        }
+        console.log(Math.floor(percentage))
+        ProgressBarGame.innerHTML = Math.floor(percentage) + "%"
+    }
+    this.ProgressBarLevelTwo = function (objectfinish) {
+        var myplayerleft = this.x
+        var myplayerright = this.x + this.width
+        var finishleft = objectfinish.x
+        var finishright = objectfinish.x + objectfinish.width
+        const maxX = 10100;
+        var percentage = 0
+        if (myplayerright >= finishleft && myplayerleft <= finishright) {
+            percentage = 100
+        } else {
+            percentage = 100 - ((finishleft - myplayerright) / (maxX - myplayerright)) * 100
+        }
+        console.log(Math.floor(percentage))
+        ProgressBarGame.innerHTML = Math.floor(percentage) + "%"
+    }
 }
 //All Content Level One
 function LevelOneGame() {
@@ -1776,12 +1790,11 @@ function LevelOneGame() {
     if (ConditionGame.innerHTML == "Game Over") {
         StopLevel()
         GameOverLevel()
-        BackSoundLevelOne.StopVideo()
+        Player.ProgressBarLevelOne(FinishedLevel)
     }
     if (ConditionGame.innerHTML == "Finish") {
         StopLevel()
         CompletedGameLevel()
-        BackSoundLevelOne.StopVideo()
         OneFinish.innerHTML = "Level 1 Finish"
     }
 }
@@ -1971,12 +1984,11 @@ function LevelTwoGame() {
     if (ConditionGame.innerHTML == "Game Over") {
         StopLevel()
         GameOverLevel()
-        BackSoundLevelTwo.StopVideo()
+        Player.ProgressBarLevelTwo(FinishedLevel)
     }
     if (ConditionGame.innerHTML == "Finish") {
         StopLevel()
         CompletedGameLevel()
-        BackSoundLevelTwo.StopVideo()
         TwoFinish.innerHTML = "Level 2 Finish"
     }
     Player.MovementPlayer()
@@ -1986,7 +1998,6 @@ function ComponentLevelThree() {
     Moon = new Object(1050, 0, 150, 150, "Moon.png", "image")
     // FinishedLevel = new Object(1500, 25, 450, 550, "Finish.png", "image")
     FinishedLevel = new Object(17000, 25, 450, 550, "Finish.png", "image")
-    BackSoundLevelThree = new video("BacksoundLevelThree.mp4")
     Komet1 = new Object(1200, 240, 400, 120, "Komet.png", "image")
     Komet2 = new Object(1200, 0, 400, 120, "Komet.png", "image")
     Komet3 = new Object(1200, 480, 400, 120, "Komet.png", "image")
@@ -2247,7 +2258,6 @@ ButtonMainMenuPaused.onclick = function () {
     TittlePausedGame.style.visibility = "hidden"
     MainMenuOpen()
     StopLevel()
-    BackSoundMusic.LoopVideo()
 }
 let TittleGameOver = document.getElementById("TittleGameOver")
 let DisplayGameOverGame = document.getElementById("DisplayGameOver")
@@ -2278,7 +2288,6 @@ ButtonMainMenuGameOver.onclick = function () {
     StopLevel()
     MainMenuOpen()
     ConditionGame.innerHTML = "Play"
-    BackSoundMusic.LoopVideo()
 }
 function GameOverLevel() {
     DisplayGameOverGame.showModal()
@@ -2337,6 +2346,5 @@ ButtonMainMenuFinish.onclick = function () {
     ConditionGame.innerHTML = "Play"
     StopLevel()
     MainMenuOpen()
-    BackSoundMusic.LoopVideo()
 }
 //<--------------------------------------- End Display Condition Game -------------------------------------------------->
