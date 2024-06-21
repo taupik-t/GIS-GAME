@@ -14,11 +14,11 @@ input[type=range]{
     left: 183px;
 }
 .ParameterMusic[type=range]::-webkit-slider-runnable-track{
-    background-image: url("Parameter.png");
+    background-image: url("../../images/Parameter.png");
     height: 20px;
 }
 .ParameterMusic[type=range]:focus::-webkit-slider-runnable-track {
-    background-image: url("Parameter Hover.png");
+    background-image: url("../../images/Parameter Hover.png");
     height: 20px;
 }
 .ParameterMusic[type=range]:focus::-webkit-slider-thumb{
@@ -26,7 +26,7 @@ input[type=range]{
     height: 40px;
     width: 40px;
     cursor: pointer;
-    background-image: url("Button Music Hover.png");
+    background-image: url("../../images/Button Music Hover.png");
     margin-top: -10px;
 }
 .ParameterMusic[type=range]::-webkit-slider-thumb {
@@ -34,7 +34,7 @@ input[type=range]{
     height: 40px;
     width: 40px;
     cursor: pointer;
-    background-image: url("Button Music.png");
+    background-image: url("../../images/Button Music.png");
     margin-top: -10px;
 }
 .ParameterMusic[type=range]:focus {
@@ -49,7 +49,7 @@ input[type=range]{
     height: 40px;
     width: 40px;
     cursor: pointer;
-    background-image: url("Button Sound.png");
+    background-image: url("../../images/Button Sound.png");
     margin-top: -10px;
     
 }
@@ -58,15 +58,15 @@ input[type=range]{
     height: 40px;
     width: 40px;
     cursor: pointer;
-    background-image: url("Button Sound Hover.png");
+    background-image: url("../../images/Button Sound Hover.png");
     margin-top: -10px;
 }
 /* Parameter Volume */
 .ParameterSound[type=range]:focus::-webkit-slider-runnable-track {
-    background-image: url("Parameter Hover.png");
+    background-image: url("../../images/Parameter Hover.png");
     height: 20px;
 }
 .ParameterSound[type=range]::-webkit-slider-runnable-track{
-    background-image: url("Parameter.png");
+    background-image: url("../../images/Parameter.png");
     height: 20px;
 }

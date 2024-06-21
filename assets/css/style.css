@@ -19,7 +19,7 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("Background Main Menu.png");
+    background-image: url("../images/Background Main Menu.png");
 }
 .TittleGame{
     top: 33px;
@@ -282,7 +282,7 @@ button{
 
 /*------------------------------------------------ Play Menu ----------------------------------------------------------*/
 .PlayMenuCanvas{
-    background-image: url("Background Play Game.png");
+    background-image: url("../images/Background Play Game.png");
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -312,7 +312,7 @@ button{
     border-left: 10px solid #0471ee;
     border-right: 10px solid #0471ee;
     border-bottom: 10px solid rgb(0, 81, 255);
-    background-image: url("DisplayLevel.png");
+    background-image: url("../images/DisplayLevel.png");
     width: 220px;
     height: 330px;
     top: 196px;
@@ -324,7 +324,7 @@ button{
     border-left: 10px solid rgb(0, 81, 255);
     border-right: 10px solid rgb(0, 81, 255);
     border-bottom: 10px solid blue;
-    background-image: url("DisplayLevel.png");
+    background-image: url("../images/DisplayLevel.png");
     width: 220px;
     height: 330px;
     top: 196px;
@@ -363,7 +363,7 @@ button{
     content: "";
     height: 310px;
     width: 200px;
-    background-image: url("DisplayCompletedLevel.png");
+    background-image: url("../images/DisplayCompletedLevel.png");
     top: 10px;
     left: 10px;
     color: #04b0ee;
@@ -387,7 +387,7 @@ button{
     border-left: 10px outset grey;
     border-right: 10px inset grey;
     border-bottom: 10px outset gray;
-    background-image: url("DisplayLockedLevel.png");
+    background-image: url("../images/DisplayLockedLevel.png");
     cursor: not-allowed;
 }
 .ButtonLockedLevelTwo:hover{
@@ -400,7 +400,7 @@ button{
     border-left: 10px inset grey;
     border-right: 10px outset grey;
     border-bottom: 10px solid rgb(15, 15, 15);
-    background-image: url("DisplayLockedLevel.png");
+    background-image: url("../images/DisplayLockedLevel.png");
     cursor: not-allowed;
 }
 .ButtonLevelTwo{
@@ -409,7 +409,7 @@ button{
     border-left: 10px solid #0471ee;
     border-right: 10px solid #0471ee;
     border-bottom: 10px solid rgb(0, 81, 255);
-    background-image: url("DisplayLevel.png");
+    background-image: url("../images/DisplayLevel.png");
     width: 220px;
     height: 330px;
     top: 196px;
@@ -422,7 +422,7 @@ button{
     border-left: 10px solid rgb(0, 81, 255);
     border-right: 10px solid rgb(0, 81, 255);
     border-bottom: 10px solid blue;
-    background-image: url("DisplayLevel.png");
+    background-image: url("../images/DisplayLevel.png");
     width: 220px;
     height: 330px;
     top: 196px;
@@ -460,7 +460,7 @@ button{
     content: "";
     height: 310px;
     width: 200px;
-    background-image: url("DisplayCompletedLevel.png");
+    background-image: url("../images/DisplayCompletedLevel.png");
     top: 10px;
     left: 10px;
     color: #04b0ee;
@@ -479,7 +479,7 @@ button{
     border-left: 10px outset grey;
     border-right: 10px inset grey;
     border-bottom: 10px outset gray;
-    background-image: url("DisplayLockedLevel.png");
+    background-image: url("../images/DisplayLockedLevel.png");
     cursor: not-allowed;
 }
 .ButtonLockedLevelThree:hover{
@@ -492,7 +492,7 @@ button{
     border-left: 10px inset grey;
     border-right: 10px outset grey;
     border-bottom: 10px solid rgb(15, 15, 15);
-    background-image: url("DisplayLockedLevel.png");
+    background-image: url("../images/DisplayLockedLevel.png");
     cursor: not-allowed;
 }
 .ButtonLevelThree{
@@ -501,7 +501,7 @@ button{
     border-left: 10px solid #0471ee;
     border-right: 10px solid #0471ee;
     border-bottom: 10px solid rgb(0, 81, 255);
-    background-image: url("DisplayLevel.png");
+    background-image: url("../images/DisplayLevel.png");
     width: 220px;
     height: 330px;
     top: 196px;
@@ -514,7 +514,7 @@ button{
     border-left: 10px solid rgb(0, 81, 255);
     border-right: 10px solid rgb(0, 81, 255);
     border-bottom: 10px solid blue;
-    background-image: url("DisplayLevel.png");
+    background-image: url("../images/DisplayLevel.png");
     width: 220px;
     height: 330px;
     top: 196px;
@@ -552,7 +552,7 @@ button{
     content: "";
     height: 310px;
     width: 200px;
-    background-image: url("DisplayCompletedLevel.png");
+    background-image: url("../images/DisplayCompletedLevel.png");
     top: 10px;
     left: 10px;
     color: #04b0ee;
@@ -562,7 +562,7 @@ button{
     letter-spacing: 6px;
 }
 .EmptyThroophyOne{
-    background-image: url("LevelOne.png");
+    background-image: url("../images/LevelOne.png");
     left: 243px;
     background-color: transparent;
     border: none;
@@ -573,7 +573,7 @@ button{
     height: 170px;
 }
 .ThroophyOne{
-    background-image: url("LevelOneCompleted.png");
+    background-image: url("../images/LevelOneCompleted.png");
     left: 243px;
     background-color: transparent;
     border: none;
@@ -584,7 +584,7 @@ button{
     height: 170px;
 }
 .EmptyThroophyTwo{
-    background-image: url("LevelTwo.png");
+    background-image: url("../images/LevelTwo.png");
     background-color: transparent;
     border: none;
     position: absolute;
@@ -595,7 +595,7 @@ button{
     height: 170px;
 }
 .ThroophyTwo{
-    background-image: url("LevelTwoCompleted.png");
+    background-image: url("../images/LevelTwoCompleted.png");
     background-color: transparent;
     border: none;
     position: absolute;
@@ -614,7 +614,7 @@ button{
     height: 170px;
     background-color: transparent;
     border: none;
-    background-image: url("Locked.png");
+    background-image: url("../images/Locked.png");
 }
 .EmptyThroophyThree{
     position: absolute;
@@ -625,7 +625,7 @@ button{
     height: 170px;
     background-color: transparent;
     border: none;
-    background-image: url("LevelThree.png");
+    background-image: url("../images/LevelThree.png");
 }
 .ThroophyThree{
     position: absolute;
@@ -636,7 +636,7 @@ button{
     height: 170px;
     background-color: transparent;
     border: none;
-    background-image: url("LevelThreeCompleted.png");
+    background-image: url("../images/LevelThreeCompleted.png");
 }
 .LockedLevelThree{
     position: absolute;
@@ -647,14 +647,14 @@ button{
     height: 170px;
     background-color: transparent;
     border: none;
-    background-image: url("Locked.png");
+    background-image: url("../images/Locked.png");
 }
 /*---------------------------------------------- End Play Menu --------------------------------------------------------*/
 
 /*---------------------------------------------- Character Menu -------------------------------------------------------*/
 /* Canvas Choose Character */
 .CharacterCanvas{
-    background-image: url("Background Choose Character.png");
+    background-image: url("../images/Background Choose Character.png");
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -674,7 +674,7 @@ button{
     position: absolute;
     top: 143px;
     left: 293px;
-    background-image: url("CharacterOne.png");
+    background-image: url("../images/CharacterOne.png");
     width: 320px;
     height: 420px;
     border: 10px grey inset;
@@ -683,7 +683,7 @@ button{
     position: absolute;
     top: 143px;
     left: 753px;
-    background-image: url("CharacterTwo.png");
+    background-image: url("../images/CharacterTwo.png");
     width: 320px;
     height: 420px;
     border: 10px grey inset;
@@ -719,7 +719,7 @@ button{
     width: 300px;
     position: absolute;
     background-color: #1c1b29; 
-    background-image: url("CharacterOne.png");
+    background-image: url("../images/CharacterOne.png");
     border-radius: 5px;
     top: 10px;
     left: 10px;
@@ -759,7 +759,7 @@ button{
     width: 300px;
     position: absolute;
     background-color: #1c1b29; 
-    background-image: url("CharacterTwo.png");
+    background-image: url("../images/CharacterTwo.png");
     border-radius: 5px;
     top: 10px;
     left: 10px;
@@ -816,7 +816,7 @@ button{
 
 /*---------------------------------------------- Settings Menu --------------------------------------------------------*/
 .SettingsCanvas{
-    background-image: url("Background Settings.png");
+    background-image: url("../images/Background Settings.png");
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -895,7 +895,7 @@ button{
     left: 1000px;
     width: 220px;
     height: 170px;
-    background-image: url("KeyArrow.png");
+    background-image: url("../images/KeyArrow.png");
 }
 .KeyArrowDisplay:hover{
     cursor: pointer;
@@ -933,7 +933,7 @@ button{
     left: 1000px;
     width: 220px;
     height: 170px;
-    background-image: url("KeyWASD.png");
+    background-image: url("../images/KeyWASD.png");
 }
 .KeyWASDDisplay:hover{
     cursor: pointer;
@@ -960,7 +960,7 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("Background About Page 1.png");
+    background-image: url("../images/Background About Page 1.png");
 }
 .PageDislay{
     position: absolute;
@@ -1156,7 +1156,7 @@ button{
 
 /*----------------------------------------------- Level Game ----------------------------------------------------------*/
 .CanvasLevelGame{
-    background-image: url("Background Level.png");
+    background-image: url("../images/Background Level.png");
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -1166,7 +1166,7 @@ button{
 .PausedLevelButton{
     position: absolute;
     border: 1px solid blue;
-    background-image: url("ButtonPause.png");
+    background-image: url("../images/ButtonPause.png");
     top: 43px;
     left: 1253px;
     width: 52px;
@@ -1175,14 +1175,14 @@ button{
 }
 .PausedLevelButton:hover{
     border: 1px solid blueviolet;
-    background-image: url("ButtonPauseHover.png");
+    background-image: url("../images/ButtonPauseHover.png");
     width: 52px;
     height: 52px;
     border-radius: 50px;
 }
 .PausedLevelButton:active{
     border: 1px solid white;
-    background-image: url("ButtonPause.png");
+    background-image: url("../images/ButtonPause.png");
     width: 52px;
     height: 52px;
     border-radius: 50px;
@@ -1191,7 +1191,7 @@ button{
     background-color: transparent;
     border: 15px blue groove;
     border-radius: 30px;
-    background-image: url("DisplayPause.png");
+    background-image: url("../images/DisplayPause.png");
     width: 430px;
     height: 430px;
     position: absolute;
@@ -1413,7 +1413,7 @@ button{
 .DisplayLevelFinish{
     bottom: 325px;
     position: absolute;
-    background-image: url("LevelOneCompleted.png");
+    background-image: url("../images/LevelOneCompleted.png");
     width: 200px;
     height: 170px;
     border: none;

@@ -249,7 +249,8 @@ function ObjectMenu(x, y, width, height, color, type) {
     this.type = type
     if (type == "image" || type == "background") {
         this.image = new Image()
-        this.image.src = color
+        const basePath = "/assets/images/";  // Base path for images
+        this.image.src = basePath + color;
     }
     this.UpdateMenu = function () {
         ctx = DrawCanvasMainMenu
@@ -1504,8 +1505,9 @@ function Object(x, y, width, height, color, type) {
     this.type = type
     //Detection Type of object
     if (type == "image" || type == "background") {
-        this.image = new Image()
-        this.image.src = color
+        this.image = new Image();
+        const basePath = "assets/images/";  // Base path for images
+        this.image.src = basePath + color;
     }
     //To add Object
     this.UpdateObject = function () {
@@ -1514,7 +1516,7 @@ function Object(x, y, width, height, color, type) {
             ctx.drawImage(this.image,
                 this.x,
                 this.y,
-                this.width, this.height);
+                this.width, this.height)
             if (type == "background") {
                 ctx.drawImage(this.image,
                     this.x + this.width,

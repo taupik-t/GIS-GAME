@@ -3,9 +3,9 @@
 <head>
     <title>G. I. S.</title>
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
-    <link rel="stylesheet" href="A PARAMETER.css">
-    <link rel="stylesheet" href="A FONT.css">
-    <link rel="stylesheet" href="A GIS.css">
+    <link rel="stylesheet" href="assets/css/elements/parameterStyle.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
         .ButtonPlay{
             background-color: white;
@@ -17,7 +17,15 @@
     </style>
 </head>
 <body onload="WebOnload()">
+    <!-- Start Screen -->
     <button id="ButtonPlay" class="ButtonPlay" onclick="MainMenuOpen()">Play?</button>
+    <!-- END Start Screen -->
+
+    <!-- Menu Screen -->
+    <main>
+        
+    </main>
+    <!-- END Menu Screen -->
     <!------------------------------------------------ Main Menu -------------------------------------------------------->
     <!-- Main Menu -->
     <canvas width="1200" height="600" class="MainMenuCanvas" id="MainMenuCanvas"></Canvas>
@@ -165,6 +173,6 @@
     </dialog>
     <!--------------------------------------- End Display Condition Game ------------------------------------------------>
     <button class="BackButton" id="BackButton" style="vertical-align:middle"><span class="BackBtn" id="BackBtn">Back</span></button>
-    <script src="A GIS.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

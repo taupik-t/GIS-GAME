@@ -5,7 +5,7 @@
     left: 83px;
 }
 .AboutOne{
-    background-image: url("Background About Page 1.png");
+    background-image: url("assets/images/Background About Page 1.png");
 }
 /* Button Home */
 .WrapHomeBtnOne{
@@ -13,20 +13,20 @@
     left: 100px;
 }
 .HomeBtnOne{
-    background-image: url("Back Button.png");
+    background-image: url("assets/images/Back Button.png");
     width: 55px;
     height: 55px;
     border-radius: 5px;
     cursor: pointer;
 }
 .HomeBtnOne:hover{
-    background-image: url("Back Button Hover.png");
+    background-image: url("assets/images/Back Button Hover.png");
     width: 55px;
     height: 55px;
     border-radius: 5px;
 }
 .HomeBtnOne:active{
-    background-image: url("Back Button.png");
+    background-image: url("assets/images/Back Button.png");
     width: 55px;
     height: 55px;
     border-radius: 5px;
@@ -42,7 +42,7 @@
     border: hidden;
     width: 100px;
     height: 50px;
-    background-image: url("Button Next.png");
+    background-image: url("assets/images/Button Next.png");
 }
 .NextBtnOne:hover{
     color: transparent;
@@ -50,7 +50,7 @@
     border: hidden;
     width: 100px;
     height: 50px;
-    background-image: url("Button Next Hover.png");
+    background-image: url("assets/images/Button Next Hover.png");
 }
 .NextBtnOne:active{
     color: transparent;
@@ -58,7 +58,7 @@
     border: hidden;
     width: 100px;
     height: 50px;
-    background-image: url("Button Next Active.png");
+    background-image: url("assets/images/Button Next Active.png");
 }
 
 /* Page Two About */
@@ -68,7 +68,7 @@
     left: 1449px;
 }
 .AboutTwo{
-    background-image: url("Background About Page 2.png");
+    background-image: url("assets/images/Background About Page 2.png");
 }
 /* Home Button */
 .WrapHomeBtnTwo{
@@ -81,7 +81,7 @@
     border: hidden;
     width: 60px;
     height: 63px;
-    background-image: url("Home Button.png");
+    background-image: url("assets/images/Home Button.png");
 }
 /* Back Button */
 .WrapBackBtnOne{
@@ -94,7 +94,7 @@
     border: hidden;
     width: 100px;
     height: 50px;
-    background-image: url("Button Back.png");
+    background-image: url("assets/images/Button Back.png");
 }
 .BackBtnOne:hover{
     color: transparent;
@@ -102,7 +102,7 @@
     border: hidden;
     width: 100px;
     height: 50px;
-    background-image: url("Button Back Hover.png");
+    background-image: url("assets/images/Button Back Hover.png");
 }
 .BackBtnOne:active{
     color: transparent;
@@ -110,7 +110,7 @@
     border: hidden;
     width: 100px;
     height: 50px;
-    background-image: url("Button Back Active.png");
+    background-image: url("assets/images/Button Back Active.png");
 }
 /* Next Button */
 .WrapNextBtnTwo{
@@ -123,7 +123,7 @@
     border: hidden;
     width: 100px;
     height: 50px;
-    background-image: url("Button Next.png");
+    background-image: url("assets/images/Button Next.png");
 }
 .NextBtnTwo:hover{
     color: transparent;
@@ -131,7 +131,7 @@
     border: hidden;
     width: 100px;
     height: 50px;
-    background-image: url("Button Next Hover.png");
+    background-image: url("assets/images/Button Next Hover.png");
 }
 .NextBtnTwo:active{
     color: transparent;
@@ -139,7 +139,7 @@
     border: hidden;
     width: 100px;
     height: 50px;
-    background-image: url("Button Next Active.png");
+    background-image: url("assets/images/Button Next Active.png");
 }
 
 /* Page Three About */
@@ -148,7 +148,7 @@
     left: 2815px;
 }
 .AboutThree{
-    background-image: url("Background About Page 3.png");
+    background-image: url("assets/images/Background About Page 3.png");
 }
 /* Home Button */
 .WrapHomeBtnThree{
@@ -161,7 +161,7 @@
     border: hidden;
     width: 60px;
     height: 63px;
-    background-image: url("Home Button.png");
+    background-image: url("assets/images/Home Button.png");
 }
 /* Back Button */
 .WrapBackBtnTwo{
@@ -174,7 +174,7 @@
     border: hidden;
     width: 100px;
     height: 50px;
-    background-image: url("Button Back.png");
+    background-image: url("assets/images/Button Back.png");
 }
 .BackBtnTwo:hover{
     color: transparent;
@@ -182,7 +182,7 @@
     border: hidden;
     width: 100px;
     height: 50px;
-    background-image: url("Button Back Hover.png");
+    background-image: url("assets/images/Button Back Hover.png");
 }
 .BackBtnTwo:active{
     color: transparent;
@@ -190,5 +190,5 @@
     border: hidden;
     width: 100px;
     height: 50px;
-    background-image: url("Button Back Active.png");
+    background-image: url("assets/images/Button Back Active.png");
 }
